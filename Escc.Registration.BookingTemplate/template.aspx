@@ -2,9 +2,9 @@
 <asp:Content runat="server" ContentPlaceHolderID="metadata">
     {meta}
     <Metadata:MetadataControl runat="server" Title="{pagetitle}" DateCreated="2015-11-25" IpsvPreferredTerms="Registration of births; Registration of marriages; Registration of deaths" Creator="East Sussex County Council registration service" />
-    <ClientDependency:Css runat="server" Files="ContentSmall" />
-    <ClientDependency:Css runat="server" Files="ContentMedium" MediaConfiguration="Medium" />
-    <ClientDependency:Css runat="server" Files="ContentLarge" MediaConfiguration="Large" />
+    <ClientDependency:Css runat="server" Files="ContentSmall" Moveable="False" />
+    <ClientDependency:Css runat="server" Files="ContentMedium" MediaConfiguration="Medium" Moveable="False" />
+    <ClientDependency:Css runat="server" Files="ContentLarge" MediaConfiguration="Large" Moveable="False" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="breadcrumb">

@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escc.Registration.BookingTemplate", "Escc.Registration.BookingTemplate\Escc.Registration.BookingTemplate.csproj", "{735B6F35-F9F3-4F08-8381-B1337DD8FB95}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsccWebTeam.EastSussexGovUK", "..\Escc.EastSussexGovUK\Escc.EastSussexGovUK\EsccWebTeam.EastSussexGovUK.csproj", "{1426FEF0-23DC-4C23-AE15-67F2527BD741}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA70EF5B-FC77-486E-BE1F-EA86AFA43FCA}"
 	ProjectSection(SolutionItems) = preProject
@@ -29,12 +27,6 @@ Global
 		{735B6F35-F9F3-4F08-8381-B1337DD8FB95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{735B6F35-F9F3-4F08-8381-B1337DD8FB95}.UAT|Any CPU.ActiveCfg = Release|Any CPU
 		{735B6F35-F9F3-4F08-8381-B1337DD8FB95}.UAT|Any CPU.Build.0 = Release|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.UAT|Any CPU.ActiveCfg = Release|Any CPU
-		{1426FEF0-23DC-4C23-AE15-67F2527BD741}.UAT|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
