@@ -29,6 +29,7 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 *.config
 !*.example.config
+!*/Views/web.config
 !packages.config
 *.scc
 [Ss]cripts*/
