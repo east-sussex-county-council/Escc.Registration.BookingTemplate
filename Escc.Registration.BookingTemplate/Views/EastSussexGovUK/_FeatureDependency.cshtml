@@ -20,18 +20,15 @@
         Html.RequiresJs(JsFileAlias.Resolve(requiredJs.JsFileAlias), requiredJs.Priority);
     }
 
-    if (!HttpContext.Current.Response.HeadersWritten)
+    var config = new ContentSecurityPolicyFromConfig();
+    var filter = new ContentSecurityPolicyUrlFilter(Request.Url, config.UrlsToExclude);
+    if (filter.ApplyPolicy() && !Response.HeadersWritten)
     {
-        var config = new ContentSecurityPolicyFromConfig();
-        var filter = new ContentSecurityPolicyUrlFilter(Request.Url, config.UrlsToExclude);
-        if (filter.ApplyPolicy() && !Response.HeadersWritten)
+        foreach (var requiredPolicy in Model.RequiresContentSecurityPolicy())
         {
-            foreach (var requiredPolicy in Model.RequiresContentSecurityPolicy())
-            {
-                var policy = new ContentSecurityPolicyHeaders(HttpContext.Current.Response.Headers);
-                policy.AppendPolicy(config.Policies[requiredPolicy.Alias]);
-                policy.UpdateHeaders();
-            }
+            var policy = new ContentSecurityPolicyHeaders(HttpContext.Current.Response.Headers);
+            policy.AppendPolicy(config.Policies[requiredPolicy.Alias]);
+            policy.UpdateHeaders();
         }
     }
 }
