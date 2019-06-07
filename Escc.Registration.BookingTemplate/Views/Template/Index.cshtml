@@ -1,10 +1,7 @@
 ﻿@model Escc.Registration.BookingTemplate.StopfordModel
 @{
     Model.Metadata.Title = "{pagetitle}";
-    Model.Metadata.DateCreated = "2015-11-25";
-    Model.Metadata.IpsvPreferredTerms = "Registration of births; Registration of marriages; Registration of deaths";
-    Model.Metadata.Creator = "East Sussex County Council registration service";
-
+    Model.Metadata.DateCreated = new DateTimeOffset(new DateTime(2015, 11, 25));
 }
 @section Metadata {
     {meta}
